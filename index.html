@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Huckle Buckle Beanstalk</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,400italic|Open+Sans+Condensed:300|PT+Sans+Narrow|Lora:400,400italic,700italic|Merriweather:400,300|Indie+Flower|Shadows+Into+Light|Abel&subset=latin,greek-ext,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/progressbar.css"> -->
+</head>
+<body>
+	<div>
+		<div id="content">
+			<h1>Huckle Buckle Beanstalk | Hot or Cold Game</h1>
+			<p id="rules">This is purely a guessing game where the computer randomly generates a number between 0 and 100. You try to guess what number the computer picked. The progress bar below increases depending on how close your guess is. "Hot" means you are close, "Cold" means you are not.</p>
+				<p>So lets play!!!</p>
+		</div>
+		<div  id="wrap">
+			<form id="user">
+				<input id="guessNum" type="button" value="New Game">
+				<input id="int"  type="text" value="Number between 0 & 100" onfocus="value=''">
+				<input id="play" type="submit" value="Guess">
+			</form>
+		</div>
+		<div id="status" class="cold hot"></div>
+			<div class="curve" id="progress">
+				<div id="meter"></div>
+			</div>
+	</div>
+	<script src="javascript/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
